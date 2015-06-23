@@ -111,7 +111,7 @@ XdomainRails.configure do |config|
   # config.slave_domains =
 
   # how long should proxy be cached
-  # config.cache = 
+  # config.cache =
 end
 ```
 
@@ -125,6 +125,11 @@ You can pass domains as an argument:
 <%= xdomain_slaves ['http://slave.example.com'] %>
 <%= xdomain_masters {'http://master.example.com': '/*.json'] %>
 ```
+
+### Rails compatibility
+
+This gem supports Rails 4.x.
+Check out (https://github.com/annkissam/xdomain-rails/tree/master-rails-3.x) for a Rails 3.x compatible version.
 
 ## Changelog
 
